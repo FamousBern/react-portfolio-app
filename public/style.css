@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #f2f2f2;
+  font-family: 'Tahoma';
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.profile{
+  text-align: center;
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 3px;
+
+}
+
+.img{
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/bern2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: auto;
+  border: 3px solid #66dac7;
+}
+
+h2 span{
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  color: #66dac7;
+}
+
+.profile p{
+  text-transform: uppercase;
+  color: #8c8c8c;
+}
+
+.btn{
+  padding: .5em 1.5em;
+  width: 200px;
+  margin: 10px;
+  background-color: #2e4158;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background .5s ease-out;
+}
+
+.btn:hover{
+  background-color: #5bcac1;
+}
+
+/* sills component */
+
+
+/* contact component */
+input[type=text]{
+  padding: 10px;
+  outline: none;
+  border: 1px solid #66dac7;
+  border-radius: 24px;
+  margin: 10px;
+  width: 200px;
+  background: #eee;
+  transition: .5s;
+}
+
+input[type=text]:focus{
+  width: 250px;
+}
+
+
+textarea{
+  background: #eee;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #66dac7;
+  border-radius: 5px;
+  margin: 10px;
+  width: 200px;
+  transition: .5s;
+}
+
+textarea:focus{
+  width: 250px;
+}
+
+
+
+.btn-sub{
+  padding: .5em 20px;
+  width: 200px;
+  margin: 10px;
+  background-color: #2e4158;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background .5s ease-out;
+}
+
+.btn-sub:hover{
+  background-color: #5bcac1;
+}
+
+/* progres bar */
+.progres-bar{
+  position: relative;
+  height: 16px;
+  width: 250px;
+  border-radius: 50px;
+  border: 1px solid #2e4158;
+}
+
+
+.filler{
+  background: #66dac7;
+  height: 100%;
+  border-radius: inherit;
+  transition: width .2s ease-in;
+}
+
+
+
+/*footer component */
+.footer{
+  background: linear-gradient(to right, #2e4158, #66dac7);
+  padding: 20px;
+  color: #f2f2f2;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto;
+}
+
+.info{
+  border-left: 2px solid #f2f2f2;
+  padding-left: 35px;
+}
+
+.link{
+  padding: 16px;
+  border: none;
+  margin: 5px;
+  color: #2f8bfc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background .25s ease-in;
+}
+
+.link:hover{
+  background: #c40b58;
+  color: #fff;
+}
+
+
+
+@media(min-width:700px){
+
+  .profile{
+    width: 500px;
+  }
+  input[type=text]{
+    display: auto;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+  }
+  .btn-sub{
+    display: block;
+    margin: auto;
+  }
+  .progres-bar{
+    position: relative;
+    height: 16px;
+    width: 400px;
+    border-radius: 50px;
+    border: 1px solid #2e4158;
+  }
+  
+  
+  .filler{
+    background: #66dac7;
+    height: 100%;
+    border-radius: inherit;
+    transition: width .2s ease-in;
+  }
+}
